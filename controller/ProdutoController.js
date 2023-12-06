@@ -14,15 +14,14 @@ const deleteImage = require('../helpers/upload/deleteImagem');
 /*****FIREBASE - CONEXÃO E CONFIGURAÇÃO*****/
 /*DADOS DE CONEXÃO COM O FIREBASE*/
 const firebaseConfig = {
-    apiKey: "AIzaSyAmA1vhCuYw-tWEY-0Pf6LbU2T7KdhD83c",
-    authDomain: "upload-nodejs-d709e.firebaseapp.com",
-    projectId: "upload-nodejs-d709e",
-    storageBucket: "upload-nodejs-d709e.appspot.com",
-    messagingSenderId: "208090475096",
-    appId: "1:208090475096:web:a0f40e3954af73c7acb82d",
-    measurementId: "G-XS6298SD7G"
+    apiKey: "AIzaSyAgdCVVEDj1UDsNLlwfDUXPwke5SQUrbjw",
+    authDomain: "livrariapw.firebaseapp.com",
+    projectId: "livrariapw",
+    storageBucket: "livrariapw.appspot.com",
+    messagingSenderId: "1051302776965",
+    appId: "1:1051302776965:web:ed82968443a4a293bb99ec",
+    measurementId: "G-VSJYT72DB6"
 };
-
 //INICIALIZAR O FIREBASE 
 const firebaseApp = initializeApp(firebaseConfig);
 
@@ -49,7 +48,7 @@ router.post("/produto/cadastrarProduto", upload.array('files', 1), (req, res) =>
 
                 getDownloadURL(imageRef)
                     .then((urlFinal) => {
-                        if (cont === 0) {
+                        if (cont == 0) {
                             imagem_produto = snapshot.metadata.name; // Corrigido de fileName
                             imagem_produto_url = urlFinal;
                             cont++;
@@ -59,7 +58,7 @@ router.post("/produto/cadastrarProduto", upload.array('files', 1), (req, res) =>
                         } else {
 
                             if (imagem_produto_url !== 1) {
-                                console.log('A IMAGEM JA FOI ENVIADA');
+                                console.log('URL IMAGEM');
                             }
                         }
 

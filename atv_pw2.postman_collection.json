@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "693dbe09-57a5-4836-8a46-d478b07655ba",
+		"_postman_id": "212c4acb-a0f3-471f-9b03-653cc891c08d",
 		"name": "atv_pw2",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "29029790"
+		"_exporter_id": "29029671"
 	},
 	"item": [
 		{
@@ -23,31 +23,32 @@
 										{
 											"key": "files",
 											"type": "file",
-											"src": "/C:/Users/andrey_23781/Pictures/mochila.jpg"
+											"src": "/C:/Users/ruan_23976/Desktop/assistencia.PNG"
 										},
 										{
 											"key": "nome_produto",
-											"value": "Mochila Tática Exército Americano",
+											"value": "Assistência Técnica",
 											"type": "text"
 										},
 										{
 											"key": "valor_produto",
-											"value": "1200",
+											"value": "1.200.000",
 											"type": "text"
 										},
 										{
 											"key": "descricao_produto",
-											"value": "Mochila do exercito americano",
+											"value": "Empresa de Manutenção Eletrônica",
 											"type": "text"
 										},
 										{
 											"key": "codigo_produto",
-											"value": "2",
-											"type": "text"
+											"value": "1",
+											"type": "text",
+											"disabled": true
 										},
 										{
 											"key": "codigo_categoria",
-											"value": "2",
+											"value": "1",
 											"type": "text"
 										}
 									]
@@ -120,7 +121,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"nome_categoria\": \"RELOGIOS\",\r\n    \"observacoes_categoria\":\"Para ver as horas.\"\r\n}",
+									"raw": "{\r\n    \"nome_categoria\": \"Empresa\",\r\n    \"observacoes_categoria\":\"Farm de dinheiro\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
