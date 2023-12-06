@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "693dbe09-57a5-4836-8a46-d478b07655ba",
+		"name": "atv_pw2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29029790"
+	},
+	"item": [
+		{
+			"name": "controller",
+			"item": [
+				{
+					"name": "ProdutoController",
+					"item": [
+						{
+							"name": "CadastrarProduto",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "files",
+											"type": "file",
+											"src": "/C:/Users/andrey_23781/Pictures/mochila.jpg"
+										},
+										{
+											"key": "nome_produto",
+											"value": "Mochila Tática Exército Americano",
+											"type": "text"
+										},
+										{
+											"key": "valor_produto",
+											"value": "1200",
+											"type": "text"
+										},
+										{
+											"key": "descricao_produto",
+											"value": "Mochila do exercito americano",
+											"type": "text"
+										},
+										{
+											"key": "codigo_produto",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "codigo_categoria",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/produto/cadastrarProduto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"produto",
+										"cadastrarProduto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ListarProduto",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/produto/listarProduto",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"produto",
+										"listarProduto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ExcluirProduto",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/produto/excluirProduto/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"produto",
+										"excluirProduto",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CategoriaController",
+					"item": [
+						{
+							"name": "CadastrarCategoria",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome_categoria\": \"RELOGIOS\",\r\n    \"observacoes_categoria\":\"Para ver as horas.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/categoria/cadastrarCategoria",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categoria",
+										"cadastrarCategoria"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ListarCategoria",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/categoria/listarCategoria",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categoria",
+										"listarCategoria"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AlterarCategoria",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"codigo_categoria\": 2,\r\n    \"nome_categoria\": \"MOCHILAS\",\r\n    \"observacoes_categoria\":\"Serve para guardar e carregar coisas\"    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/categoria/alterarCategoria",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categoria",
+										"alterarCategoria"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ExcluirCategoria",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/categoria/excluirCategoria/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categoria",
+										"excluirCategoria",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
